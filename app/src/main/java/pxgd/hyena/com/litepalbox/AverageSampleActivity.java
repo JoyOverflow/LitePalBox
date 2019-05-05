@@ -6,8 +6,18 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import org.litepal.LitePal;
+
+import pxgd.hyena.com.litepalbox.model.Singer;
 
 public class AverageSampleActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private EditText mAgeEdit;
+    private TextView mResultText;
+
 
     public static void actionStart(Context context) {
         Intent intent = new Intent(context, AverageSampleActivity.class);
@@ -19,38 +29,33 @@ public class AverageSampleActivity extends AppCompatActivity implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_average_sample);
 
-        Button mCountSampleBtn = findViewById(R.id.count_sample_btn);
-        Button mMaxSampleBtn = findViewById(R.id.max_sample_btn);
-        Button mMinSampleBtn = findViewById(R.id.min_sample_btn);
-        Button mAverageSampleBtn = findViewById(R.id.average_sample_btn);
-        Button mSumSampleBtn = findViewById(R.id.sum_sample_btn);
-        mCountSampleBtn.setOnClickListener(this);
-        mMaxSampleBtn.setOnClickListener(this);
-        mMinSampleBtn.setOnClickListener(this);
-        mAverageSampleBtn.setOnClickListener(this);
-        mSumSampleBtn.setOnClickListener(this);
+
+        Button mAvgBtn1 = findViewById(R.id.avg_btn1);
+        Button mAvgBtn2 = findViewById(R.id.avg_btn2);
+        mAgeEdit = findViewById(R.id.age_edit);
+        mResultText = findViewById(R.id.result_text);
+        mAvgBtn1.setOnClickListener(this);
+        mAvgBtn2.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
+        double result = 0;
         switch (v.getId()) {
-            case R.id.count_sample_btn:
-                CountSampleActivity.actionStart(this);
+            case R.id.avg_btn1:
+                result = LitePal.average(Singer.class, "age");
+                mResultText.setText(String.valueOf(result));
                 break;
-            case R.id.max_sample_btn:
-                MaxSampleActivity.actionStart(this);
-                break;
-            case R.id.min_sample_btn:
-                MinSampleActivity.actionStart(this);
-                break;
-            case R.id.average_sample_btn:
-                AverageSampleActivity.actionStart(this);
-                break;
-            case R.id.sum_sample_btn:
-                SumSampleActivity.actionStart(this);
+            case R.id.avg_btn2:
+                try {
+                    result = LitePal.where("age > ?", mAgeEdit.getText().toString()).average(
+                            Singer.class, "age");
+                    mResultText.setText(String.valueOf(result));
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
                 break;
             default:
-                break;
         }
     }
 }
