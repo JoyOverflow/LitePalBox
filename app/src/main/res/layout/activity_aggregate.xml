@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".AggregateActivity">
-
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/count_sample_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/count_sample" />
+    <Button
+        android:id="@+id/max_sample_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/max_sample" />
+    <Button
+        android:id="@+id/min_sample_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/min_sample" />
+    <Button
+        android:id="@+id/average_sample_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/average_sample" />
+    <Button
+        android:id="@+id/sum_sample_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sum_sample" />
+</LinearLayout>

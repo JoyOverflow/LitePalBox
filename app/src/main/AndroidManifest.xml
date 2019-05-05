@@ -39,6 +39,24 @@
         </activity>
         <activity android:name=".TableActivity">
         </activity>
+        <activity android:name=".SaveDataActivity">
+        </activity>
+        <activity android:name=".UpdateDataActivity">
+        </activity>
+        <activity android:name=".DeleteDataActivity">
+        </activity>
+        <activity android:name=".QueryDataActivity">
+        </activity>
+        <activity android:name=".CountSampleActivity">
+        </activity>
+        <activity android:name=".MaxSampleActivity">
+        </activity>
+        <activity android:name=".MinSampleActivity">
+        </activity>
+        <activity android:name=".AverageSampleActivity">
+        </activity>
+        <activity android:name=".SumSampleActivity">
+        </activity>
     </application>
 
 </manifest>
