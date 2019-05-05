@@ -59,7 +59,7 @@ public class SaveDataActivity extends AppCompatActivity implements View.OnClickL
 
 
     /**
-     * 通过线程取数据库记录
+     * 通过线程取数据表记录
      */
     private void populateDataFromDB() {
         mProgressBar.setVisibility(View.VISIBLE);

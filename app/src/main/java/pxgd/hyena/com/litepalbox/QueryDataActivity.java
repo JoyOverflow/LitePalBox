@@ -11,7 +11,6 @@ public class QueryDataActivity extends AppCompatActivity {
         Intent intent = new Intent(context, QueryDataActivity.class);
         context.startActivity(intent);
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
