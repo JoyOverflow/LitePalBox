@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="pxgd.hyena.com.litepalbox">
-
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -15,7 +14,6 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
@@ -31,31 +29,44 @@
             android:name=".AggregateActivity"
             android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ModelListActivity">
+        <activity android:name=".ModelListActivity"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".TableListActivity">
+        <activity android:name=".TableListActivity"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ModelActivity">
+        <activity android:name=".ModelActivity"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".TableActivity">
+        <activity android:name=".TableActivity"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".SaveDataActivity">
+        <activity android:name=".SaveDataActivity"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".UpdateDataActivity">
+        <activity android:name=".UpdateDataActivity"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".DeleteDataActivity">
+        <activity android:name=".DeleteDataActivity"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".QueryDataActivity">
+        <activity android:name=".QueryDataActivity"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".CountSampleActivity">
+        <activity android:name=".CountSampleActivity"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".MaxSampleActivity">
+        <activity android:name=".MaxSampleActivity"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".MinSampleActivity">
+        <activity android:name=".MinSampleActivity"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".AverageSampleActivity">
+        <activity android:name=".AverageSampleActivity"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".SumSampleActivity">
+        <activity android:name=".SumSampleActivity"
+                  android:screenOrientation="portrait">
         </activity>
     </application>
 
