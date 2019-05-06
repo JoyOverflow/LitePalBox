@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ThreadApp</string>
+
+    <string name="text1">Рррраз!!!</string>
+    <string name="text2">Два!!!</string>
+    <string name="text3">Трррри!!!!!</string>
+    <string name="text4">Бум</string>
+</resources>
