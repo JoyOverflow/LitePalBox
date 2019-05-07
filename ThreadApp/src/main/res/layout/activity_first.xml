@@ -33,4 +33,33 @@
         android:textAllCaps="false"
         android:layout_below="@id/b_generate"
         android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_Third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goTo_Third"
+        android:text="Any-Number"
+        android:textAllCaps="false"
+        android:layout_below="@id/b_image_download"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btn_Background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goTo_Background"
+        android:text="Background"
+        android:textAllCaps="false"
+        android:layout_below="@id/btn_Third"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btn_Gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goTo_Gift"
+        android:text="Gift"
+        android:textAllCaps="false"
+        android:layout_below="@id/btn_Background"
+        android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>

@@ -100,4 +100,25 @@ public class FirstActivity extends AppCompatActivity {
                         SecondActivity.class)
         );
     }
+    public void goTo_Third(View view){
+        startActivity(
+                new Intent(
+                        FirstActivity.this,
+                        ThirdActivity.class)
+        );
+    }
+    public void goTo_Background(View view){
+        startActivity(
+                new Intent(
+                        FirstActivity.this,
+                        BackgroundActivity.class)
+        );
+    }
+    public void goTo_Gift(View view){
+        startActivity(
+                new Intent(
+                        FirstActivity.this,
+                        GiftActivity.class)
+        );
+    }
 }
