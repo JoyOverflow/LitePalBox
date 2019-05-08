@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">DataList</string>
+
+    <string name="country_prompt">Choose a country</string>
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+
+
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="btn_display">Display</string>
+
+
+    <string name="closebtn">×</string>
+    <string name="OKbtn">OK</string>
+    <string name="title">スコア</string>
+    <string name="message">MessageMessageMessageMessageMessageMessageMessageMessageMessage</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="button">呼び出し</string>
 </resources>

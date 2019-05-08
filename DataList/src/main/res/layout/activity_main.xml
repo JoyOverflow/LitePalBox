@@ -1,19 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".MainActivity">
-
-    <TextView
+    <Button
+        android:id="@+id/btnGridView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="goToClick"
+        android:text="GridView"/>
+    <Button
+        android:id="@+id/btnListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnGridView"
+        android:onClick="goToClick"
+        android:text="ListView"/>
+    <Button
+        android:id="@+id/btnSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnListView"
+        android:onClick="goToClick"
+        android:text="Spinner"/>
+    <Button
+        android:id="@+id/btnRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnSpinner"
+        android:onClick="goToClick"
+        android:text="Radio"/>
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnRadio"
+        android:onClick="goToClick"
+        android:text="DatePicker"/>
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btnDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnRadio"
+        android:onClick="goToClick"
+        android:text="Dialog"/>
+
+
+</RelativeLayout>
+

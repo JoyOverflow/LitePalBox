@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".GridViewActivity">
+        </activity>
+        <activity android:name=".ListViewActivity">
+        </activity>
+        <activity android:name=".SpinnerActivity">
+        </activity>
+        <activity android:name=".RadioActivity">
+        </activity>
+        <activity android:name=".DatePickerActivity">
+        </activity>
+        <activity android:name=".DialogActivity">
+        </activity>
     </application>
 
 </manifest>

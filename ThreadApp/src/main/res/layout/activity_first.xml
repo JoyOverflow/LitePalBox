@@ -33,7 +33,6 @@
         android:textAllCaps="false"
         android:layout_below="@id/b_generate"
         android:layout_centerHorizontal="true"/>
-
     <Button
         android:id="@+id/btn_Third"
         android:layout_width="wrap_content"
@@ -61,5 +60,4 @@
         android:textAllCaps="false"
         android:layout_below="@id/btn_Background"
         android:layout_centerHorizontal="true"/>
-
 </RelativeLayout>
